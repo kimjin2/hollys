@@ -8,7 +8,7 @@ $(function(){
         autoplaySpeed : 3000, 
         pauseOnHover : true,
         swipe : true
-    });//slick
+      });//slick
 
       $(window).scroll(function(){
 
@@ -37,7 +37,7 @@ $(function(){
             //나눠지는 숫자가 작을 수록 속도가 빠름
           var coords = '0' + yPos + 'px';
           bg.css({backgroundPosition:coords});
-        });//scrool
+        });
       });
 
       $('.tabSet').each(function(){
@@ -47,19 +47,21 @@ $(function(){
         var href_on = anchor_on.attr('href'); //c) b의 href
         var panel = $(this).find('.panel'); // #panel1-1 
         
+      
         $(href_on).show(); 
         anchor.each(function(){
           var href_this = $(this).attr('href');
          
           $(this).click(function(){
+            panel.fadeIn(300);
             panel.hide();
-            $(href_this).fadeIn(500);
         
             anchor.removeClass('on')
             $(this).addClass('on');
             $(href_this).show();
-            })//click
+            })
+         
           })//each2
         })//each
-})//ready
+  })//ready
   

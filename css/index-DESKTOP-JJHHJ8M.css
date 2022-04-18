@@ -33,6 +33,7 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-wrap:wrap;
     
 }
 
@@ -41,7 +42,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color:#000
 }
 
 
@@ -50,13 +50,9 @@
     font-weight: 800;
     display:flex;
     flex-direction:row;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     justify-content:space-between;
     align-items: center;
-}
-
-#nav .main_nav .deth1{
-    color:#000
 }
 
 #nav .main_nav a{
@@ -71,9 +67,7 @@
     height:75%
 }
 
-
-#nav .login > .login_txt:hover  > a{color:#F9A5AF}
-
+#nav .fran > p > a{color:#F24D6C}
 
 #nav .main_nav > a > p{
   font-weight: 800;
@@ -91,19 +85,15 @@
     text-align: center;}
 #nav .main_nav > li > a{border-bottom: 3px solid transparent; padding-bottom: 5px;
 }
-#nav .main_nav > li:hover > a{
-    color:#F9A5AF;
-    border-bottom-color:#F9A5AF}
-
+#nav .main_nav > li:hover > a{border-bottom-color:#F9A5AF}
 #nav .main_nav > li:hover .main_nav2{
-    background-color: rgba(250, 250, 250,0.7);
     display: flex;}  
 
 #nav .main_nav2 {
         font-weight:500;
         font-size:1em;
         position: absolute;
-        width: 18vh;
+        width: 200px;
         left:50%;
        transform: translate(-50%, 0);
        /* background-color: aquamarine;*/
@@ -120,7 +110,6 @@
 
      }
    
-
     #nav .main_nav2 > li{
             width:100%; 
             padding:20px 10px;
@@ -170,8 +159,7 @@ flex-direction: column;
 position:absolute;
 font-weight: 800;
 font-size:1.8em;
-top:20%;
-color: #000;
+top:20%
     
 }
 
@@ -226,23 +214,19 @@ position:relative
     font-weight:800px;
     font-size: 1.5em;
     padding: 10px 10px;
-    flex-shrink: 1;
     
-}
-#section2 .tabs a.on{
-    color:red
 }
 
 
     #section2 .sec2_right{
         width:calc(135% - 50px);
         margin-left:50px;
+        padding-left:50px;
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:right;
         align-items: center;
-        flex-shrink: 1;
     }
 
  #section2 .sec2_right .img_box1,
@@ -253,10 +237,6 @@ position:relative
      position:relative; 
      border-radius:90px;
      overflow: hidden;
-     flex-shrink: 1;
-     box-sizing: border-box;
-     margin: 5px 5px;
-     flex-shrink: 1;
       }
 
      #section2 .sec2_right .img_box1_txt,
@@ -267,10 +247,10 @@ position:relative
        font-size: 1.8rem;
        font-weight: 800;
        font: bold;
-         transform: translate(-30%, 35%);
-       color:#000;
-       flex-shrink: 1;
-    
+       top:25%;
+       padding-left:50px;
+       transform: translate(-30%, 35%);
+       color:#F24D6C
      }
     
 
@@ -278,8 +258,7 @@ position:relative
     #section2 .sec2_right .img_box2:first-child,
     #section2 .sec2_right .img_box3:first-child{
         border-radius: 0;
-        border: 1px solid  #F24D6C;
-        flex-shrink: 1;
+        border: 1px solid  #F24D6C
         }
         
     #section2 .sec2_right .img_box1:nth-child(1),
@@ -294,65 +273,56 @@ position:relative
     #section2 .sec2_right .img_box1:nth-child(2) .img1{
         background-image: url(../images/coffe1.png);
         background-size: 100%;
-        flex-shrink: 1;
        }
     #section2 .sec2_right .img_box1:nth-child(3) .img1{
         background-image: url(../images/coffe2.png);
         background-size: 100%;
-        flex-shrink: 1;
        }
     #section2 .sec2_right .img_box1:nth-child(4) .img1{
         background-image: url(../images/coffe3.png);
         background-size: 100%;
-        flex-shrink: 1;
       }
 
       #section2 .sec2_right .img_box2:nth-child(2) .img2{
         background-image: url(../images/cake1.png);
         background-size: 100%;
-        flex-shrink: 1;
        }
 
      #section2 .sec2_right .img_box2:nth-child(3) .img2{
         background-image: url(../images/cake2.png);
         background-size: 100%;
-        flex-shrink: 1;
        }
 
       #section2 .sec2_right .img_box2:nth-child(4) .img2{
         background-image: url(../images/cake3.png);
         background-size: 100%;
-        flex-shrink: 1;
         }
 
         #section2 .sec2_right .img_box3:nth-child(2) .img3{
             background-image: url(../images/md2.png);
             background-size: 100%;
-            flex-shrink: 1;
            }
     
          #section2 .sec2_right .img_box3:nth-child(3) .img3{
             background-image: url(../images/md3.png);
             background-size: 100%;
-            flex-shrink: 1;
            }
     
           #section2 .sec2_right .img_box3:nth-child(4) .img3{
             background-image: url(../images/md4.png);
             background-size: 100%;
-            flex-shrink: 1;
             }
 
     #section2 .sec2_right .img_box1 span,
     #section2 .sec2_right .img_box2 span,
     #section2 .sec2_right .img_box3 span{
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 500px;
         position:absolute;
         left: 40%;
-        top: 75%;
+        top: 80%;
         color:#F24D6C;
-        transform:translate(-30%, 50%);
+        transform:translate(-30%, 50%)
         }
 
         
@@ -407,7 +377,7 @@ height: 390px;}
 /*section5*/
 
 #section5{
-    width: 100%;
+    position: relative;
     margin-top:80px;
     margin-bottom:80px;
     left:15px
@@ -416,11 +386,11 @@ height: 390px;}
 #section5 h2{
     position: relative;
     text-align: center;
+    border: 1px solid red;
     margin:75px auto;
-    width: 100%;
+    width: 15%;
     padding:15px;
-    color:#000
-
+    border-radius: 30px;
 }
 
 #section5 .sns_width{
@@ -438,7 +408,6 @@ height: 390px;}
     position: relative;
     font-size: 1.5em;
     color:#F24D6C;
-    
 }
 
 #section5 .sns1{
@@ -531,8 +500,7 @@ footer .inner{
 footer .txt{
     width:100%;
     margin:20px 0;
-    color:#ffff;
-   
+    color:#ffff
     }
 
 footer .txt > p{
@@ -545,21 +513,18 @@ footer .footer_right{
         justify-content: space-between;
         align-items: center;
         margin-top: 30px;
-        width:50%
+        width:40%
     }
       
 footer .footer_right .pp{
         margin-bottom:25px;
-        color:#ffff;
-      
+        color:#ffff
     }
 
 footer  .inner .footer_right .pp a{
         justify-content: space-between;
         padding:10px;
         width:calc((100% - 20px * 2) / 3);
-        flex-shrink: 1;
-        flex-grow: 1;
     }
 
 footer  .a{
@@ -577,85 +542,11 @@ footer  .a{
 
 /*a가 움직이지 않게 하는 코드 */
 
-@media all and (max-width: 1600px){
+@media all and(max-width: 1600px;){
 
 }/* 1600px*/
 
-@media all and (max-width: 1025px){ 
-    #section2 .panels{
-        display: flex;
-        flex-flow:row wrap;
-       margin:auto;
-       position:relative;
-       z-index: 11115}
+@media all and(max-width: 1150px;){
 
-    #section2 .sec2_right{
-    width: 100%;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
-    align-items: center;
-    flex-shrink: 1;
-}
-
-    footer .footer_right{
-        width: 100%;
-    }
-    footer .footer_right > .pp{
-        align-content: space-around
-    }
-    
-}/* 1024px*/
-
-@media all and (max-width: 760px){
-
-    #nav .nav{display:none}
-
-    #section2 .panel .menu1 {
-        position:relative;
-        top: 20%
-    }
-    #section2 .tabs {
-        display: block;
-        flex-direction: row;
-        top: 10%;
-        color: #000;
-    }
-
-    #section2 .sec2_right {
-        width: 100%;
-        margin-left: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: right;
-        align-items: center;
-        flex-shrink: 0;
-        z-index: 11112}
-
-    #section2 .panels{
-     display: flex;
-     flex-flow:column wrap;
-    margin:auto;
-    position:relative;
-    z-index: 11113
-    }
-
-    #section5 .sns_width{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: auto;
-        z-index: 11114;
-    }
-
-    #section5 .sns_width .sns_box{
-        margin: 10px 10px;
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-}/* 320px*/
+}/* 1150px*/
 

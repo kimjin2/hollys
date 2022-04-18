@@ -52,8 +52,12 @@ $(function(){
           var href_this = $(this).attr('href');
          
           $(this).click(function(){
+            $(this).css({
+              "color" : "red"
+            });
             panel.hide();
             $(href_this).fadeIn(500);
+        
         
             anchor.removeClass('on')
             $(this).addClass('on');

@@ -10,6 +10,7 @@
 #header .logo{
     width:80px;
 }
+#header .logo img{width:100%}
 #header .nav{
    
 }
@@ -42,8 +43,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 
 #nav .main_nav{ 
@@ -125,6 +124,15 @@
 #section1{margin-bottom:20px}
 #section1 img{width:100%}                
 
+
+/*section3*/
+
+#section3{
+    
+}
+#section3 .sub_na0{
+    border-bottom: 1px solid #cccc
+}
 
 /* footer */
 footer{
