@@ -63,6 +63,22 @@ $(function(){
         });//each
         
         $(".open1").click(function(){
+          $(".LeftWrap").animate({right:0},500,"swing")
+          });
+            
+        $(".close1").click(function(){
+          $(".LeftWrap").animate({right:-300},500,"swing")
+          });
+          
+        $('#btn1 > li').each(function() {
+            var submenu = $(this).find('.sub');
+            var menu_link = $(this).children('a');
+            $(menu_link).click(function(){
+               $(submenu).stop().slideToggle();
+             })
+        });		
+
+        $(".open1").click(function(){
           $(".LeftWrap").animate({left:0},500,"swing")
           });
             
