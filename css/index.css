@@ -14,6 +14,7 @@ section{
 }
 #header{width:100%}
 #header .logo{
+    position: relative;
     width:50%;
 }
 
@@ -27,16 +28,20 @@ section{
     
 }
 #nav .inner{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-    color:#F24D6C
+    display: flex;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: #F24D6C;
 }
 
 #nav .nav{
     display:flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     z-index: 9999;
 }
@@ -52,11 +57,9 @@ section{
 
 #nav .main_nav{ 
     font-weight: 800;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #nav .main_nav .deth1{
@@ -72,8 +75,7 @@ section{
     height: 100%;
     display: flex;
     align-items: flex-start;
-    z-index: 5885845;
-    position: absolute}
+    z-index: 5885845;}
 
 #nav .main_nav a{
                 padding: 0 20px ;}
@@ -169,9 +171,11 @@ section{
             .close1{display:block; width:30px; height:30px; line-height:30px; font-size:13px; font-weight:bold; 
             background:#fff; color:#F24D6C; border-radius:15px; text-align:center; text-decoration:none;
             position:absolute; top:15px; right:15px;}
-            .open1{display:block; width:30px; position:absolute;
-                top: 30%;
-                right: 2%; 
+            .open1{display:block; 
+                width:30px; 
+                position:absolute;
+                top: 2%;
+                right: 2%;
             }
             .open1 span{display:block; width:30px; height:4px; background:#555; margin-bottom:2px;}
         
