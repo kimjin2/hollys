@@ -1,6 +1,7 @@
 ﻿@charset "utf-8";
 
-.inner{width:100%; 
+.inner{width:100%;
+    height: 50%; 
     overflow: hidden;
     max-width: 1440px; margin:0 auto}
 
@@ -13,7 +14,7 @@ section{
 }
 #header{width:100%}
 #header .logo{
-    width:10%;
+    width:50%;
 }
 
 #header .nav{
@@ -21,7 +22,7 @@ section{
 }
 /* nav*/
 #nav{position: fixed;
-    z-index: 2;
+    z-index: 2582525;
     width:100%;
     
 }
@@ -37,17 +38,16 @@ section{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    z-index: 9999;
 }
 
 #nav .login{
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color:#000
+    color:#F24D6C;
 }
-
 
 
 #nav .main_nav{ 
@@ -63,6 +63,18 @@ section{
     color:#000
 }
 
+#nav .main_nav2{
+    width: calc(100%);
+}
+
+#nav .main_nav2 > .deth2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    z-index: 5885845;
+    position: absolute}
+
 #nav .main_nav a{
                 padding: 0 20px ;}
 
@@ -76,6 +88,8 @@ section{
 }
 
 
+
+
 #nav .login > .login_txt:hover  > a{color:#F9A5AF}
 
 
@@ -83,16 +97,18 @@ section{
   font-weight: 800;
 }
 
-#nav .logo img{
-    width:85%
+#nav .logo > img{
+    width:25%
 }
 
 #nav p{padding: 0 10px}    
 
 #nav h2{display: block;}
 
-#nav .main_nav > li{position: relative;
+#nav .main_nav > li{
+    position: relative;
     text-align: center;}
+
 #nav .main_nav > li > a{border-bottom: 3px solid transparent; padding-bottom: 5px;
 }
 #nav .main_nav > li:hover > a{
@@ -119,15 +135,16 @@ section{
         margin-top: 10px;
      }
 
-     #nav .main_nav2 a{
+     #nav .main_nav2 > a{
             margin-top: 10px;
+            padding: % 0% 5% 0%;
 
      }
    
 
     #nav .main_nav2 > li{
             width:100%; 
-            padding:20px 10px;
+            padding: 20px 10px;
             box-sizing: border-box;
             text-align: center;
         }
@@ -236,7 +253,7 @@ position:relative
 }
 
 #section2 .back3{width:100%;
-    background: url(../images/de.jpg) no-repeat;
+    background: url(../images/plan.jpg) no-repeat;
     background-size: 90%;
     background-position: 80px 180px;
 }
