@@ -171,13 +171,17 @@ section{
             .close1{display:block; width:30px; height:30px; line-height:30px; font-size:13px; font-weight:bold; 
             background:#fff; color:#F24D6C; border-radius:15px; text-align:center; text-decoration:none;
             position:absolute; top:15px; right:15px;}
-            .open1{display:block; 
+            .open1{display:none; 
                 width:30px; 
                 position:absolute;
                 top: 2%;
                 right: 2%;
             }
-            .open1 span{display:block; width:30px; height:4px; background:#555; margin-bottom:2px;}
+            .open1 span{display:block; 
+                width:30px; 
+                height:4px; 
+                background:#555; 
+                margin-bottom:2px;}
         
              #btn1{padding:50px}
              #btn1 ul{display:none}
@@ -697,6 +701,13 @@ footer  .a{
         justify-content: space-around;
         align-content: center;
         color: #000;
+    }
+
+    .open1{display:block; 
+        width:30px; 
+        position:absolute;
+        top: 2%;
+        right: 2%;
     }
 
     #nav .fran {
