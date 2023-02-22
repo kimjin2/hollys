@@ -666,7 +666,7 @@ ol {
 /* footer */
 footer {
   font-weight: 500;
-  font-size: medium;
+    font-size: 0.7rem;
   width: 100%;
   background-color: #f24d6c;
 }
