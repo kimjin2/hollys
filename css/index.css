@@ -191,7 +191,7 @@ ol {
 .LeftWrap {
   width: 300px;
   height: 100%;
-  background: #f24d6c;
+  background: #fff;
   position: fixed;
   top: 0;
   left: -300px;
@@ -207,8 +207,8 @@ ol {
   line-height: 30px;
   font-size: 13px;
   font-weight: bold;
-  background: #fff;
-  color: #f24d6c;
+  background: #f24d6c;
+  color: #fff;
   border-radius: 15px;
   text-align: center;
   text-decoration: none;
@@ -220,8 +220,8 @@ ol {
   display: none;
   width: 30px;
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 20%;
+  left: 50%;
 }
 .open1 span {
   display: block;
@@ -232,15 +232,15 @@ ol {
 }
 
 #btn1 {
+  height: 100%;
   padding: 50px;
 }
+
 #btn1 ul {
   display: none;
 }
 
 /*픽스 시행 후 */
-#nav.fix1 {
-}
 
 #nav.fix2 {
   background-color: #ffff;
@@ -542,7 +542,7 @@ ol {
   align-items: center;
   margin: 10px auto;
   width: 100%;
-  padding: 8px 15px 15px 15px;
+  padding: 5px 16px 16px 0%;
   font-size: 2.5rem;
   font-weight: 700;
   color: #000;
@@ -625,7 +625,7 @@ ol {
   text-align: center;
   margin: 16px auto;
   width: 100%;
-  padding: 5px 16px 16px 16px;
+  padding: 5px 16px 16px 0%;
   font-size: 2.5rem;
   font-weight: 700;
   color: #000;
@@ -666,7 +666,7 @@ ol {
 /* footer */
 footer {
   font-weight: 500;
-    font-size: 0.7rem;
+  font-size: 0.7rem;
   width: 100%;
   background-color: #f24d6c;
 }
@@ -724,9 +724,6 @@ footer .a img {
 }
 
 /*a가 움직이지 않게 하는 코드 */
-
-@media all and (max-width: 1600px) {
-} /* 1600px*/
 
 @media all and (max-width: 1025px) {
   #section2 .panels {
@@ -837,9 +834,8 @@ footer .a img {
   .open1 {
     display: block;
     width: 30px;
-    position: absolute;
-    top: 2%;
-    right: 2%;
+    left: 55%;
+    padding: 2% 5%;
   }
 
   #nav .fran {
@@ -973,8 +969,13 @@ footer .a img {
     color: black;
     display: block;
   }
-}
 
-.LeftWrap {
-  display: block;
-}
+  .LeftWrap {
+    display: block;
+  }
+
+  #btn1 > li {
+    color: black;
+    padding: 11% 1%;
+  }
+  
