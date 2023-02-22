@@ -766,6 +766,10 @@ footer .a img {
   #section6 .news_width .newsBox {
     width: 35%;
   }
+  #section5 .sns_box .sns_a > .sns1 > p {
+    padding-top: 81%;
+    padding-left: 31%;
+  }
   #section6 .news_width .newsBox > .new {
     width: 5%;
     padding: 20px 0px;
