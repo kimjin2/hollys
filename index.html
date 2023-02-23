@@ -16,17 +16,21 @@
 <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
 <script src="https://kit.fontawesome.com/7c3f410dad.js" crossorigin="anonymous"></script>
 <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>  <!-- -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>  <!-- -->
 <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
-
+<script src="js/tabs.js"></script>
 <script src="js/main.js"></script>
 <!--서브페이지에서는 기능별로 js 파일을 따로 만들어 모듈별로 사용해야 함.  
    그렇지 않으면 코드 간의 충돌이 일어날 수 있음.-->
 </head>
 
 <body>
-<div id="wrap"> 
- <header id="header">
+ <header id="header" >
    <nav id="nav">
     <div>
       <div class="nav">
@@ -112,109 +116,171 @@
     </div>
   </section>
 </section> 
-
-  <section id="section2" class="inner">
-    <h2 Class="menu_tittle">HOLLYS MENU</h2>
-    <article class="menu  tabSet">
-      <div class="panels">
-        <div class="tabs">
-          <a href="#panel1-1" class="on">음 료</a>
-          <a href="#panel1-2">디저트</a>
-          <a href="#panel1-3">기획상품</a> 
-        </div> <!-- tabS -->
-        <div class="panel" id="panel1-1">
-          <article class="menu1">
-            <div class="back off"></div>
-                  <div class="sec2_right">
-                    <div class="img_box1_txt">
-                      <p>당신의 마음에<br>
-                        달콤함이 가득하길</p>
-                    </div>
-                    <div class="img_box1">
-                      <span>카페라떼</span>
-                      <a href="https://www.hollys.co.kr/menu/espresso.do" class="meun_a">
-                        <p class="img1"></p>
-                      </a> 
-                    </div>
-                    <div class="img_box1">
-                      <span>아메리카노</span>
-                      <a href="https://www.hollys.co.kr/menu/espresso.do" class="meun_a">
-                        <p class="img1"></p>
-                      </a> 
-                    </div>
-                    <div class="img_box1">
-                      <span>카페모카</span>
-                      <a href="https://www.hollys.co.kr/menu/espresso.do" class="meun_a">
-                        <p class="img1"></p>
-                      </a> 
-                    </div>
-                  </div> <!-- sec2_right -->
-            </article>
-          </div><!-- panel1 -->
-
-                <div class="panel" id="panel1-2">
-                <article class="menu1">
-                  <div class="back2 off"></div>
-                    <div class="sec2_right">
-                      <div class="img_box2_txt">
-                        <p>당신의 마음에<br>
-                          달콤함이 가득하길</p>
-                      </div>
-                      <div class="img_box2">
-                        <a href="https://www.hollys.co.kr/menu/bakery.do" class="meun_a">
-                          <p class="img2"> <span>딸기숲<br>치즈케익</span></p>
-                        </a> 
-                      </div>
-                      <div class="img_box2">
-                        <span>아메리카노</span>
-                        <a href="https://www.hollys.co.kr/menu/bakery.do" class="meun_a">
-                           <p class="img2"></p>
-                        </a> 
-                      </div>
-                      <div class="img_box2">
-                        <span>카페모카</span> 
-                        <a href="https://www.hollys.co.kr/menu/bakery.do" class="meun_a">
-                          <p class="img2"></p>
-                        </a> 
-                      </div>
-                    </div> <!-- sec2_right -->
-                </article>
-              </div><!-- panel1 -->
-
-               
-                  <div class="panel" id="panel1-3">
-                    <article class="menu1">
-                    <div class="back3 off"></div>
-                      <div class="sec2_right">
-                        <div class="img_box3_txt">
-                          <p>당신의 마음에<br>
-                            달콤함이 가득하길</p>
-                        </div>
-                        <div class="img_box3">
-                          <span>카페라떼</span>
-                          <a href="https://www.hollys.co.kr/menu/bean.do" class="meun_a">
-                            <p class="img3"></p>
-                          </a> 
-                        </div>
-                        <div class="img_box3">
-                          <span>아메리카노</span>
-                          <a href="https://www.hollys.co.kr/menu/bean.do" class="meun_a">
-                            <p class="img3"></p>
-                          </a> 
-                        </div>
-                        <div class="img_box3">
-                          <span>카페모카</span>
-                          <a href="https://www.hollys.co.kr/menu/bean.do" class="meun_a">
-                           <p class="img3"></p>
-                          </a> 
-                        </div>
-                      </div> <!-- sec2_right -->
-                  </div><!-- panel1 -->
-                </article>
-                </div>
-           
-      </article><!-- tabSet -->
-    </section>
+<section id="section2" class="inner">
+  <h2>Hollys Menu</h2>
+  <ul class="list">
+    <li class="tabs red">음 료</li>
+    <li class="tabs">디저트</li>
+    <li class="tabs">기획상품</li>
+  </ul>
+  <article class="panel1">
+    <div class="panel">
+      <div class="panelImg">
+        <img src="./images/back1.jpg" alt="메뉴1 사진" />
+      </div>
+      <div class="panelMenu">
+        <ul>
+          <li>
+            <div>
+              <p class="subText">
+                당신의 마음에<br />
+                달콤함이 가득하길
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe1.png" />
+                <p class="img1">카페라떼</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe2.png" />
+                <p class="img1">아메리카노</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe3.png" />
+                <p class="img1">카페모카</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <article class="panel1">
+    <div class="panel">
+      <div class="panelImg">
+        <img src="./images/de.png" alt="메뉴1 사진" />
+      </div>
+      <div class="panelMenu">
+        <ul>
+          <li>
+            <div>
+              <p class="subText">
+                디저트는 <br />
+                언제 먹어도
+                맛있어 
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe1.png" />
+                <p class="img1">카페라떼</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe2.png" />
+                <p class="img1">아메리카노</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe3.png" />
+                <p class="img1">카페모카</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <article class="panel1 show">
+    <div class="panel">
+      <div class="panelImg">
+        <img src="./images/plan.jpg" alt="메뉴1 사진" />
+      </div>
+      <div class="panelMenu">
+        <ul>
+          <li>
+            <div>
+              <p class="subText">
+                이것이 할리스의<br />
+                기획이다
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe1.png" />
+                <p class="img1">카페라떼</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe2.png" />
+                <p class="img1">아메리카노</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="img_box1">
+              <a
+                href="https://www.hollys.co.kr/menu/espresso.do"
+                class="meun_a"
+              >
+                <img src="./images/coffe3.png" />
+                <p class="img1">카페모카</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
     <!--section3-->
   <section id="section3">
     <a href="https://www.hollys.co.kr/membership/crownOrder.do"><img src="images/membership.jpg" alt="멤버십"></a>
@@ -222,17 +288,9 @@
 
     <!--section4-->
 
-   <section id="section4" > 
-     <a href="https://www.hollys.co.kr/franchise/info/franchiseInfo.do">
-     <div class="banner">
-       
-     </div>
-    </a>
-   </section>	
-
    <!-- section5 -->
    <section id="section5" class="inner">
-      <h2>HOLLYS SNS </h2>
+      <h2>Hollys SNS </h2>
       <article class="sns">
        <div class="sns_box">
         <a href="https://www.instagram.com/p/CU67oscJguw/" class="sns_a">
@@ -264,8 +322,18 @@
        </div>
       </article>
     </section>
+
+    <section id="section4" > 
+      <a href="https://www.hollys.co.kr/franchise/info/franchiseInfo.do">
+      <div class="banner">
+      <img src="./images/f.jpg" alt="가맹점배너">
+      </div>
+     </a>
+    </section>	
+
+
     <section id="section6" class="inner">
-        <h2>HOLLYS News</h2>
+        <h2>Hollys News</h2>
       <article class="news_width">
           <div class="newsBox">
             <a href="#" class="new">
@@ -320,7 +388,27 @@
       </div>   
     </div>
   </footer>
-</div>
+  <script>
+      $(function () {
+        let tab = $(".tabs");
+        let panel12 = $(".panel1");
+
+        for (let i = 0; i < tab.length; i++) {
+          $(panel12).eq(1).show()
+          $(tab)
+            .eq(i)
+            .on("click", function () {
+              $(panel12).eq(i).show();
+              $(tab).removeClass("red");
+              $(tab).eq(i).addClass("red");
+
+              panel12.hide();
+              $(panel12).eq(i).fadeIn(500);   
+              $(panel12).eq(i).show();
+            });
+        }
+      });
+    </script>
 </body>
 </html>
 
